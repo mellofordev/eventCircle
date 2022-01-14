@@ -1,5 +1,4 @@
 <script>
-	import { fade,fly } from "svelte/transition";
 	import Router from 'svelte-spa-router';
 	import active from 'svelte-spa-router/active'
 	import Home from './Home.svelte';

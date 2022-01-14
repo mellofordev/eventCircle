@@ -14,7 +14,7 @@
 <main>
 	<div>
 		<h2 class="logo">EventCircle</h2>
-		<p class="subtitle">from sctce</p>
+		<p class="subtitle">alpha version</p>
 	</div>	
 	<header>
 		

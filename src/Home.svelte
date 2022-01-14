@@ -1,5 +1,11 @@
 <script>
-    let src='https://scontent.fcok10-1.fna.fbcdn.net/v/t39.8562-6/236059786_985111022325691_1310544145856897747_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=6825c5&_nc_ohc=uoXg69lmWeMAX_eaG99&_nc_ht=scontent.fcok10-1.fna&oh=00_AT8kZ_XwIsSbp8b8UHDqNsdS01FDAZza-lO54VnzlCEJUw&oe=61C87302';
+    let src='https://upload.wikimedia.org/wikipedia/commons/e/e3/Sree_Chitra_Thirunal_College_of_Engineering_3.jpg';
+    const srcsets =[
+		'https://upload.wikimedia.org/wikipedia/commons/e/e3/Sree_Chitra_Thirunal_College_of_Engineering_3.jpg',
+		'https://s31531.pcdn.co/wp-content/uploads/2017/05/what-is-abstract-art-kandinsky.jpg.optimal.jpg',
+	    'https://hbr.org/resources/images/article_assets/2022/01/Jan22_03_1270015925.jpg',
+		'https://media.npr.org/assets/img/2021/03/05/nyancat-still_custom-151b372a60f244f026ea3ca46a3530609e57fceb.png'
+		]
 </script>
 <div style="display: flex;justify-content:center;align-items:center;" >
     <img {src} alt="headerimg" class="headerimg"  />
@@ -13,18 +19,18 @@
     <div class="topstories">
         
         <div class="card ">
-            <img class="hover:scale-125" src='https://scontent.fcok10-1.fna.fbcdn.net/v/t39.8562-6/266562002_716986263038045_7764128639032761978_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=6825c5&_nc_ohc=LtxB_C7hQeYAX-s_5Ph&_nc_ht=scontent.fcok10-1.fna&oh=00_AT-MRQ2qaNSo_6zIRwTntFpseofiTB0uzEzRHsw_DcWbzw&oe=61C89944' alt='cardimg' style="border-top-left-radius: 10px;border-top-right-radius: 10px;"/>
+            <img class="hover:scale-125" {src} alt='cardimg' style="border-top-left-radius: 10px;border-top-right-radius: 10px;"/>
             <div class="mintext">
             <span style="font-weight:500;margin:5px;">
-				title or short discription about the blog or article 
+                tunderblot: new templating language 
             </span>	
         </div>
         </div>
         <div class="card ">
-            <img src='https://scontent.fcok10-1.fna.fbcdn.net/v/t39.8562-6/266562002_716986263038045_7764128639032761978_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=6825c5&_nc_ohc=LtxB_C7hQeYAX-s_5Ph&_nc_ht=scontent.fcok10-1.fna&oh=00_AT-MRQ2qaNSo_6zIRwTntFpseofiTB0uzEzRHsw_DcWbzw&oe=61C89944' alt='cardimg' />
+            <img {src} alt='cardimg' />
             <div class="mintext">
             <span style="font-weight:500;margin:5px;">
-                title or short discription about the blog or article 
+                tunderblot: new templating language 
             </span>	
             </div>
         </div>
@@ -41,12 +47,10 @@
 <div class="gallery">
     <div class="grids">
         <div class="row">
-            <img {src} alt="1">
-            <img {src} alt="2">
-        </div>
-        <div class="row">
-            <img {src} alt="3" >
-            <img {src} alt="4">
+            {#each srcsets as src1,i }
+			 
+			  <img src={src1} alt="{i}"/>
+			{/each}
         </div>
     </div>
     <div class="rightgrid">

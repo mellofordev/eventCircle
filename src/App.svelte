@@ -35,7 +35,8 @@
 	<footer style="background-color: black;height:350px;">
 	  <div style="display:flex;flex-direction:row; justify-content:space-around;">
 		  <div style="display: flex; flex-direction:column;">
-			<span>Github</span>
+			  
+			<span><a href="https://github.com/mellofordev/eventCircle">Github</a></span>
 			<span>Donate</span>
 			<span>Credits</span>
 		  </div>

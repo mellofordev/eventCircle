@@ -16,7 +16,7 @@
             <img class="hover:scale-125" src='https://scontent.fcok10-1.fna.fbcdn.net/v/t39.8562-6/266562002_716986263038045_7764128639032761978_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=6825c5&_nc_ohc=LtxB_C7hQeYAX-s_5Ph&_nc_ht=scontent.fcok10-1.fna&oh=00_AT-MRQ2qaNSo_6zIRwTntFpseofiTB0uzEzRHsw_DcWbzw&oe=61C89944' alt='cardimg' style="border-top-left-radius: 10px;border-top-right-radius: 10px;"/>
             <div class="mintext">
             <span style="font-weight:500;margin:5px;">
-                tunderblot: new templating language 
+				title or short discription about the blog or article 
             </span>	
         </div>
         </div>
@@ -24,7 +24,7 @@
             <img src='https://scontent.fcok10-1.fna.fbcdn.net/v/t39.8562-6/266562002_716986263038045_7764128639032761978_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=6825c5&_nc_ohc=LtxB_C7hQeYAX-s_5Ph&_nc_ht=scontent.fcok10-1.fna&oh=00_AT-MRQ2qaNSo_6zIRwTntFpseofiTB0uzEzRHsw_DcWbzw&oe=61C89944' alt='cardimg' />
             <div class="mintext">
             <span style="font-weight:500;margin:5px;">
-                tunderblot: new templating language 
+                title or short discription about the blog or article 
             </span>	
             </div>
         </div>

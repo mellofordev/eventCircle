@@ -1,5 +1,18 @@
 <script>
+    
+    import {createClient} from '@supabase/supabase-js';
+    const supabaseUrl = __api.env.SVELTE_APP_SUPABASE_URL
+    const supabaseAnonKey = __api.env.SVELTE_APP_SUPABASE_ANON_KEY
+
     let src ='https://assets.awwwards.com/awards/images/2019/05/illustration-web-design-2-cover.jpg'
+    const supabase = createClient(supabaseUrl,supabaseAnonKey)
+    const login =async ()=>{
+		const {user,session,error} = await supabase.auth.signIn({
+		provider:'google',
+	})
+    console.log(user);
+    
+	}
 </script>
 <svelte:head>
     <title>login</title>
@@ -10,7 +23,7 @@
     <div class="logincard">
         <img {src} alt="loginimg" class="loginimgdesktop"/>
         <h1>Register your free account</h1>
-        <button class="loginbtn">Login with google</button>
+        <button class="loginbtn" on:click={login}>Login with google</button>
     </div>
 
 </main>

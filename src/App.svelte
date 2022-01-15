@@ -5,8 +5,8 @@
 	import News from './News.svelte';
 	import Login from './Login.svelte';
 	const yr = new Date().getFullYear();
-	
 	const objs =[{title:'tunderbolt:our new templating language',src:'https://scontent.fcok10-1.fna.fbcdn.net/v/t39.8562-6/236059786_985111022325691_1310544145856897747_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=6825c5&_nc_ohc=uoXg69lmWeMAX_eaG99&_nc_ht=scontent.fcok10-1.fna&oh=00_AT8kZ_XwIsSbp8b8UHDqNsdS01FDAZza-lO54VnzlCEJUw&oe=61C87302'}]
+	
 </script>
 <svelte:head>
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">

@@ -10,7 +10,7 @@
 		const {user,session,error} = await supabase.auth.signIn({
 		provider:'google',
 	})
-    const loggedinuser =supabase.auth.user()
+    
 	}
     
     
@@ -26,7 +26,7 @@
         <h1>Register your free account</h1>
         <button class="loginbtn" on:click={login}>Login with google</button>
     </div>
-    <p>{loggedinuser}</p>
+
 </main>
 <style>
     main{

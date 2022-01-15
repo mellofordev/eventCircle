@@ -10,9 +10,10 @@
 		const {user,session,error} = await supabase.auth.signIn({
 		provider:'google',
 	})
-    console.log(user);
     
 	}
+    const user =supabase.auth.user()
+    
 </script>
 <svelte:head>
     <title>login</title>
@@ -25,7 +26,7 @@
         <h1>Register your free account</h1>
         <button class="loginbtn" on:click={login}>Login with google</button>
     </div>
-
+    <p>{user}</p>
 </main>
 <style>
     main{
